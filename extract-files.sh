@@ -69,6 +69,9 @@ function blob_fixup() {
         system_ext/lib64/libwfdnative.so)
             sed -i "s/android.hidl.base@1.0.so/libhidlbase.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${2}"
             ;;
+        vendor/etc/public.libraries.txt)
+            sed -i "/libqti-perfd-client.so/d" "${2}"
+            ;;
         vendor/etc/gps.conf)
             sed -i "s/com.oneplus.carrierlocation/com.google.android.carrierlocation/" "${2}"
             ;;
