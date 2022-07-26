@@ -356,13 +356,6 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libstagefrighthw
 
-# OnePlus
-PRODUCT_PACKAGES += \
-    oneplus-fwk
-
-PRODUCT_BOOT_JARS += \
-    oneplus-fwk
-
 # Perf
 PRODUCT_PACKAGES += \
     libqti-perfd-client
