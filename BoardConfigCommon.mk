@@ -137,7 +137,9 @@ TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
 # HIDL
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
-DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
+DEVICE_MANIFEST_FILE := \
+    $(COMMON_PATH)/manifest.xml \
+    $(COMMON_PATH)/manifest-$(BOARD_VENDOR).xml
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
